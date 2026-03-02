@@ -3,13 +3,12 @@ package TiposDeDados;
 public class DadosPrimitivos {
     public static void main(String[] args) {
         /*
-        * Dados Primitivos - int, double, float, char, boolean, short.
-        * Objetivo: Criar um ninja
+        * Dados Não Primitivos - String, Array, enum
+        * Objetivo: Criar um ninja, e atribuir metodos a ele
         * */
 
-        int idade = 16;
-        double altura = 1.65;
-        boolean vivoOuMorto = true;
-        long  saldoBancario = 999999999L;
+        String nome = "Naruto Uzumaki";
+        String nomeToUpperCase = nome.toUpperCase();
+        System.out.println(nomeToUpperCase);
     }
 }
