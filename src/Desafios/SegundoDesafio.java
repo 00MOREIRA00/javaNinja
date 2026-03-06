@@ -17,6 +17,7 @@ public class SegundoDesafio {
         System.out.println(selecao);
         sc.close();
 
+
         switch (selecao) {
             case 1:
                 System.out.println("Opção 1 selecionanda");
