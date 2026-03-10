@@ -5,32 +5,58 @@ import java.util.Scanner;
 public class SegundoDesafio {
     public static void main(String[] args) {
 
-        System.out.println("Bem vindo ao sistema de cadastro de ninjas. Selecione uma opção para prosseguir: ");
-        System.out.println("        OPÇÕES");
-        System.out.println("|---------------------|");
-        System.out.println("1 - Cadastrar um novo ninja");
-        System.out.println("2 - Consultar ninjas cadastrados");
-        System.out.println("3 Finalizar aplicação ");
-
         Scanner sc = new Scanner(System.in);
-        int selecao = sc.nextInt();
-        System.out.println(selecao);
-        sc.close();
 
+        final int NUMERO_MAXIMO = 10;
+        String[] ninjas = new String[NUMERO_MAXIMO];
 
-        switch (selecao) {
-            case 1:
-                System.out.println("Opção 1 selecionanda");
+        int ninjasCadastrados = 0;
+        int opcoes = 0;
 
-            case 2:
-                System.out.println("Opção 2 selecionanda");
+        while(opcoes != 3) {
+            // Menu de opçõe sdo projeto
+            System.out.println("Bem vindo ao sistema de cadastro de ninjas. Selecione uma opção para prosseguir: ");
+            System.out.println("        OPÇÕES");
+            System.out.println("|---------------------|");
+            System.out.println("1 - Cadastrar um novo ninja");
+            System.out.println("2 - Consultar ninjas cadastrados");
+            System.out.println("3 Finalizar aplicação ");
 
-            case 3:
-                System.out.println("Opção 3 selecionada");
+            opcoes = sc.nextInt();
+            sc.nextLine();
 
-            default:
-                System.out.println("Valor não reconhecido adicionando");
+            switch (opcoes) {
+                case 1:
+                    if (ninjasCadastrados < NUMERO_MAXIMO) {
+                       System.out.println("Digite o nome do ninja para cadastro: ");
+                       String nomeNinja = sc.nextLine();
+                       ninjas[ninjasCadastrados] = nomeNinja;
+                       ninjasCadastrados++;
+                        System.out.println("Ninjas " + nomeNinja + " cadastrado com sucesso !!");
+                    }else {
+                        System.out.println("A lista de ninjas já está cheia");
+                    }
+                    break;
+
+                case 2:
+                    if(ninjasCadastrados == 0) {
+                        System.out.println("Nenhum ninja cadastrado");
+                    } else {
+                        for (int i = 0; i < ninjas.length; i++) {
+                            System.out.println(ninjas[i]);
+                        }
+                    }
+                    break;
+
+                case 3:
+                    System.out.println("Estamos terminando o programa ..... Aguarde");
+                    break;
+                default:
+                    System.out.println("Essa opção não é valida !!");
+                    break;
+            }
         }
+        sc.close();
     }
 }
 
