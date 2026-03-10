@@ -43,7 +43,11 @@ public class SegundoDesafio {
                         System.out.println("Nenhum ninja cadastrado");
                     } else {
                         for (int i = 0; i < ninjas.length; i++) {
-                            System.out.println(ninjas[i]);
+                            if (ninjas[i] == null) {
+                                break;
+                            } else {
+                                System.out.println(ninjas[i]);
+                            }
                         }
                     }
                     break;
@@ -51,6 +55,7 @@ public class SegundoDesafio {
                 case 3:
                     System.out.println("Estamos terminando o programa ..... Aguarde");
                     break;
+
                 default:
                     System.out.println("Essa opção não é valida !!");
                     break;
