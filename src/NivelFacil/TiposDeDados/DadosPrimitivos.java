@@ -1,9 +1,9 @@
-package TiposDeDados;
+package NivelFacil.TiposDeDados;
 
 public class DadosPrimitivos {
     public static void main(String[] args) {
         /*
-        * Dados Não Primitivos - String, Array, enum
+        * Dados Não Primitivos - String, NivelFacil.Array, enum
         * Objetivo: Criar um ninja, e atribuir metodos a ele
         * */
 

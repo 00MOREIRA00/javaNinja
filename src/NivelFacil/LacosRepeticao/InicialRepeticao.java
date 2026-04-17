@@ -1,4 +1,4 @@
-package LacosRepeticao;
+package NivelFacil.LacosRepeticao;
 
 public class InicialRepeticao {
     public static void main(String[] args) {

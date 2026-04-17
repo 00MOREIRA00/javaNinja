@@ -1,4 +1,4 @@
-package Geral;
+package NivelFacil.Geral;
 
 import java.util.Scanner;
 

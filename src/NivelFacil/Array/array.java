@@ -1,4 +1,4 @@
-package Array;
+package NivelFacil.Array;
 
 public class array {
     public static void main(String[] args) {
@@ -21,4 +21,4 @@ public class array {
 }
 
 
-//Array é uma referencia na memoria. Cada item é um partimento na memoria alocada
+//NivelFacil.Array é uma referencia na memoria. Cada item é um partimento na memoria alocada
