@@ -10,7 +10,8 @@ public class Main {
         Naruto.aldeia = "Aldeia da Folha";
         Naruto.idade = 17;
 
-        System.out.println(Naruto.nome);
+        System.out.println(Naruto.getNome());
+        System.out.println(Naruto.anosParaSeTornarHokage(70));
 
     }
 }
