@@ -5,13 +5,19 @@ package NivelIntermediario;
 public class Main {
     public static void main(String[] args) {
 
-        Ninja Naruto = new Ninja();
+        Uzumaki Naruto = new Uzumaki();
         Naruto.nome = "Naruto Uzumaki";
         Naruto.aldeia = "Aldeia da Folha";
         Naruto.idade = 17;
+        System.out.println(Naruto.apresentacaoUzumaki());
+        Naruto.ativarModoSabio();
 
-        System.out.println(Naruto.getNome());
-        System.out.println(Naruto.anosParaSeTornarHokage(70));
 
+        Uchirra Sasuke = new Uchirra();
+        Sasuke.nome = "Sasuke Uchiha";
+        Sasuke.aldeia = "Aldeia da Folha";
+        Sasuke.idade = 17;
+        System.out.println(Sasuke.apresentacaoUchirra());
+        Sasuke.SharinganAtivado();
     }
 }
