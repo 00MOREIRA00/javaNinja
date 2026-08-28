@@ -15,5 +15,10 @@ public class Logica {
         StatusCompra compra = StatusCompra.VALIDANDO_COMPRA;
         boolean cancel = compra.canCancel();
         System.out.println(cancel);
+
+        Semana dia = Semana.DOMINGO;
+        System.out.println(dia);
+        System.out.println(dia.getDescricao());
+        System.out.println(dia.isFinalSemana());
     }
 }
